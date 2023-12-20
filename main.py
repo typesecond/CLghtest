@@ -35,13 +35,8 @@ print(usscore)
 print(recact)
 
 
-api_key = '333ae01adeae77ecc84e6a7dec40fc3b41da9e7e'
 
-params = {
-    'apikey': api_key,  # The parameter name 'apikey' may vary depending on the API
-    # ... other parameters if any
 
-}
 
 response = requests.get("https://osu.ppy.sh/api/v2/rankings/mania/performance?country=JP&filter=all&variant=4k", params=params)
 data = response.json
